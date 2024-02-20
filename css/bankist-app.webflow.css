@@ -1,0 +1,293 @@
+.w-layout-hflex {
+  flex-direction: row;
+  align-items: flex-start;
+  display: flex;
+}
+
+.w-layout-vflex {
+  flex-direction: column;
+  align-items: flex-start;
+  display: flex;
+}
+
+.page-main {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.nav_menu {
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  display: flex;
+}
+
+.login_details-wrapper {
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  align-items: center;
+  display: flex;
+}
+
+.login-details {
+  width: 5rem;
+  height: 1.3rem;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.right-arrow {
+  width: 1rem;
+  cursor: pointer;
+  padding-top: 2px;
+}
+
+.image {
+  width: 3rem;
+  height: 3rem;
+}
+
+.nav-text {
+  align-items: center;
+  font-weight: 600;
+  display: flex;
+}
+
+.body {
+  background-color: #d5d5d5;
+  font-family: Poppins, sans-serif;
+}
+
+.main_left-column {
+  width: 60%;
+  flex-direction: column;
+  display: flex;
+}
+
+.main_right-column {
+  flex-direction: column;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: flex-end;
+  display: flex;
+}
+
+.main-content_wrapper {
+  width: 60%;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  opacity: 0;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  display: flex;
+}
+
+.main-content_wrapper.login {
+  opacity: 1;
+}
+
+.bold-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.date-text {
+  color: #979595;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.date-text.bold {
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.navbar {
+  background-color: rgba(221, 221, 221, 0);
+}
+
+.main_transaction-wrapper {
+  width: 100%;
+  height: 48vh;
+  background-color: #fff;
+  border-radius: 10px;
+  flex-direction: column;
+  margin-top: 2rem;
+  display: flex;
+  overflow: scroll;
+}
+
+.main_transaction-wrapper.account {
+  margin-top: 3.1rem;
+}
+
+.transaction_wrapper {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+  justify-content: space-between;
+  padding: 1rem;
+  display: flex;
+}
+
+.transaction_left {
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.transaction-deposit {
+  color: #fff;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  overflow-wrap: normal;
+  background-color: #59c278;
+  border-radius: 20px;
+  padding: 0.1px 0.5rem;
+  font-size: 9px;
+}
+
+.transaction-deposit.withdrawal {
+  background-color: #f23d4f;
+}
+
+.transaction-date {
+  color: #000;
+  font-size: 8px;
+}
+
+.transaction-summary_wrapper {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2rem;
+  display: flex;
+}
+
+.total-in {
+  color: #1b951f;
+  font-size: 1rem;
+  margin-left: 5px;
+}
+
+.transaction_summary-content {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.down-arrow {
+  width: 0.8rem;
+}
+
+.sort-text {
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.total-out {
+  color: #f53232;
+  font-size: 1rem;
+}
+
+.current-balance {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.account-actions_wrapper {
+  height: 100%;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  flex-direction: column;
+  align-self: stretch;
+  margin-top: 3rem;
+  display: flex;
+}
+
+.account-action_content {
+  background-color: #ffbb03;
+  border-radius: 10px;
+  flex-direction: column;
+  padding: 1rem;
+  display: flex;
+}
+
+.account-action_content.loan {
+  background-image: linear-gradient(49deg, #98df5e, #3db584);
+}
+
+.account-action_content.close-account {
+  background-color: #ef3d5c;
+}
+
+.action-name {
+  font-weight: 500;
+}
+
+.action-input_wrapper {
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin-top: 1rem;
+}
+
+.action-input_content {
+  align-items: center;
+  font-size: 15px;
+}
+
+.action-input {
+  width: 7vw;
+  height: 1.5rem;
+  background-color: #e1af27;
+  border-radius: 5px;
+}
+
+.action-input.loan {
+  background-color: #ace3a8;
+}
+
+.action-input.close-account {
+  background-color: #f9909e;
+}
+
+.action-input_label {
+  font-size: 10px;
+}
+
+.button {
+  width: 2rem;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.tiny-text {
+  font-size: 10px;
+}
+
+.timer {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 991px) {
+  .transaction-summary_wrapper {
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main-content_wrapper.login {
+    margin-top: 0;
+  }
+
+  .transaction_wrapper {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .transaction-summary_wrapper {
+    margin-top: 1rem;
+  }
+}
